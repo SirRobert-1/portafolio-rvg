@@ -15,7 +15,7 @@ const tecnologias = [
       "CSS es un lenguaje de diseño gráfico para definir y crear la presentación de un documento estructurado escrito en un lenguaje de marcado.",
   },
   {
-    imagen: "/Javascript.png",
+    imagen: "/JavaScript.png",
     titulo: "Javascript",
     texto:
       "JavaScript es un lenguaje de programación que se utiliza principalmente para crear páginas web dinámicas.",
@@ -27,7 +27,7 @@ const tecnologias = [
       "Vue.js es un framework de JavaScript de código abierto para crear interfaces de usuario y aplicaciones de una sola página.",
   },
   {
-    imagen: "/Nuxt.png",
+    imagen: "/nuxt.png",
     titulo: "Nuxt",
     texto:
       "Nuxt.js es un framework de código abierto de Vue.js que se utiliza para crear aplicaciones web.",
