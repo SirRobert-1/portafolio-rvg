@@ -3,10 +3,10 @@ import Image from "next/image";
 
 function Proyectos() {
   return (
-    <div class="h-full md:h-screen px-5 text-white bg-base-200">
-      <p class="text-center lg:text-left text-4xl py-5">Proyectos</p>
+    <div className="h-full md:h-screen px-5 text-white bg-base-200">
+      <p className="text-center lg:text-left text-4xl py-5">Proyectos</p>
 
-      <div class="flex flex-col md:flex-row items-center justify-center md:justify-around md:my-24">
+      <div className="flex flex-col md:flex-row items-center justify-center md:justify-around md:my-24">
         <a
           className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
           href="https://rb-construccion.netlify.app/"
