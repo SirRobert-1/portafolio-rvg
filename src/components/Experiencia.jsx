@@ -68,7 +68,7 @@ function Experiencia() {
   return (
     <div className="bg-base-200">
       <h1 className="text-4xl text-center">Experiencia</h1>
-      <div className="flex flex-wrap">
+      <div className="flex flex-wrap justify-center">
         {tecnologias.map((tecnologia, index) => (
           <CardTecnologia
             key={index}

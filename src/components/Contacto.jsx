@@ -2,12 +2,12 @@ import React from "react";
 
 function Contacto() {
   return (
-    <div className="hero min-h-screen bg-base-200 flex flex-col md:flex-row">
+    <div className="hero h-full md:min-h-screen bg-base-200 flex flex-col md:flex-row">
       <div className="w-full md:w-1/2 flex flex-col items-center p-10">
-        <h1 className="text-5xl font-bold">Contáctame</h1>
-        <span class="my-2">69 Queen St, Melbourne Australia</span>
-        <span class="my-2">22 81 60 40 84</span>
-        <span class="my-2">rviverosgonzalez@gmail.com</span>
+        <h1 className="text-5xl font-bold mb-5">Contáctame</h1>
+        <span className="mb-2">69 Queen St, Melbourne Australia</span>
+        <span className="mb-2">22 81 60 40 84</span>
+        <span>rviverosgonzalez@gmail.com</span>
       </div>
       <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100 m-10 md:m-20">
         <h1 className="text-center text-2xl m-5">Contáctame por correo</h1>
