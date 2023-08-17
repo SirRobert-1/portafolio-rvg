@@ -6,7 +6,7 @@ const tecnologias = [
     imagen: "/Html.png",
     titulo: "HTML",
     texto:
-      "HTML es un lenguaje de marcado que se utiliza para el desarrollo de páginas de Internet. Se trata de la sigla que corresponde a HyperText Markup Language, es decir, Lenguaje de Marcas de Hipertexto, que podría traducirse como Lenguaje de Formato de Documentos para Hipertexto.",
+      "HTML es un lenguaje de marcado que se utiliza para el desarrollo de páginas de Internet. Se trata de la sigla que corresponde a HyperText Markup Language, que podría traducirse como Lenguaje de Formato de Documentos para Hipertexto.",
   },
   {
     imagen: "/Css.png",
@@ -66,9 +66,9 @@ const tecnologias = [
 
 function Experiencia() {
   return (
-    <div className="bg-base-200">
+    <div className="bg-base-200 flex flex-col items-center">
       <h1 className="text-4xl text-center">Experiencia</h1>
-      <div className="flex flex-wrap justify-center">
+      <div className="flex flex-wrap">
         {tecnologias.map((tecnologia, index) => (
           <CardTecnologia
             key={index}
