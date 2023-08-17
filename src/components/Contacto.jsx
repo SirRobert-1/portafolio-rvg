@@ -5,7 +5,6 @@ function Contacto() {
     <div className="hero h-full md:min-h-screen bg-base-200 flex flex-col md:flex-row">
       <div className="w-full md:w-1/2 flex flex-col items-center p-10">
         <h1 className="text-5xl font-bold mb-5">Contáctame</h1>
-        <span className="mb-2">69 Queen St, Melbourne Australia</span>
         <span className="mb-2">22 81 60 40 84</span>
         <span>rviverosgonzalez@gmail.com</span>
       </div>
