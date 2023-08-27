@@ -3,19 +3,22 @@ import Image from "next/image";
 
 function CardTecnologia(tecnologia) {
   return (
-    <div className="card w-96 bg-base-100 shadow-xl m-8 rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30">
-      <figure className="px-10 pt-10">
-        <Image
-          src={tecnologia.imagen}
-          className="rounded-xl"
-          width={100}
-          height={100}
-          alt=""
-        />
-      </figure>
-      <div className="card-body items-center text-center">
-        <h1 className="card-title">{tecnologia.titulo}</h1>
-        <p>{tecnologia.texto}</p>
+    <div className="group h-96 w-96 [perspective:1000px] cursor-pointer m-8 hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30">
+      <div className="relative h-full w-full rounded-x1 shadow-xl transition-all duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+        <div className="absolute inset-0 [backface-visibility:hidden] flex flex-col items-center justify-center">
+          <Image
+            className="rounded-xl mb-5"
+            src={tecnologia.imagen}
+            width={100}
+            height={100}
+            alt=""
+          />
+          <h1 className="text-xl">{tecnologia.titulo}</h1>
+        </div>
+        <div className="absolute flex flex-col items-center justify-center inset-0 h-full w-full rounded-xl text-white px-12 text-center text-slate-200 [transform:rotateY(180deg)] [backface-visibility:hidden]">
+          <h1 className="card-title text-xl mb-5">{tecnologia.titulo}</h1>
+          <p>{tecnologia.texto}</p>
+        </div>
       </div>
     </div>
   );

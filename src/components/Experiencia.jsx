@@ -1,4 +1,5 @@
 import React from "react";
+import Slider from "react-slick";
 import CardTecnologia from "./CardTecnologia";
 
 const tecnologias = [
@@ -65,6 +66,48 @@ const tecnologias = [
 ];
 
 function Experiencia() {
+  var settings = {
+    arrows: true,
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    initialSlide: 0,
+    draggable: true,
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />,
+  };
+
+  function SampleNextArrow(props) {
+    const { className, style, onClick } = props;
+    return (
+      <div
+        className={className}
+        style={{
+          ...style,
+          display: "block",
+          filter: "invert(1)",
+        }}
+        onClick={onClick}
+      ></div>
+    );
+  }
+
+  function SamplePrevArrow(props) {
+    const { className, style, onClick } = props;
+    return (
+      <div
+        className={className}
+        style={{
+          ...style,
+          display: "block",
+          filter: "invert(1)",
+        }}
+        onClick={onClick}
+      ></div>
+    );
+  }
   return (
     <div className="bg-base-200 flex flex-col items-center">
       <h1 className="text-4xl text-center">Experiencia</h1>
